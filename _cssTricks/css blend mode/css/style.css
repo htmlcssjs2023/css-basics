@@ -1,0 +1,6 @@
+body{
+    background-image: url(../img/building1.jpg);
+    background-size: cover;
+    background-color: hotpink;
+    background-blend-mode: screen;
+}

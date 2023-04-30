@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+    background-color: royalblue;
+}
+/* tabs start from here  */
+
+.tab-wrap{
+    width: 60%;
+    list-style: none;
+    padding: 0;
+    margin: 50px;
+    position: relative;
+    border: 2px solid black;
+}
+
+.tab-wrap input[type="radio"]{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+.tab-wrap li {
+    float: left;
+    display: block;
+}
+.tab-wrap label{
+    background-color: sandybrown;
+    display: inline-block;
+    padding: 20px 20px;
+    cursor: pointer; 
+    margin: 0 10px 0 0;
+    border-radius: 0px 10px 10px 0px;
+}
+.tab-wrap .tab-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0 3px 3px 3px;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    display: none;
+}
+.tab-wrap [id^=tab]:checked + label {
+    background-color: #fff;
+}
+.tab-wrap [id^=tab]:checked ~ .tab-content{
+   display: block;
+}

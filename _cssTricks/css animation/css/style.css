@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    transition: .5s;
+}
+@keyframes blink {
+    
+    10%{
+         background-image: url(../img/banor.jpg);
+        background-size: cover;
+    }
+    20%{
+        background-image: url(../img/building1.jpg);
+        background-size: cover;
+    }
+    30%{
+         background-image: url(../img/building2.jpg);
+        background-size: cover;
+    }
+   40%{
+        background-image: url(../img/quran1.jpg);
+        background-size: cover;
+    }
+    50%{
+         background-image: url(../img/quran2.jpg);
+        background-size: cover;
+    }
+    60%{
+        background-image: url(../img/makkah.jpg);
+        background-size: cover;
+    }
+    70%{
+         background-image: url(../img/hose.jpg);
+        background-size: cover;
+    }
+    80%{
+         background-image: url(../img/nature1.jpg);
+        background-size: cover;
+    }
+    100%{
+         background-image: url(../img/nature2.jpg);
+        background-size: cover;
+    }
+}
+@-webkit-keyframes blink {
+    0%{
+        background-image: url(../img/teacher.jpg);
+        background-size: cover;
+    }
+    10%{
+         background-image: url(../img/banor.jpg);
+        background-size: cover;
+    }
+    20%{
+        background-image: url(../img/building1.jpg);
+        background-size: cover;
+    }
+    30%{
+         background-image: url(../img/building2.jpg);
+        background-size: cover;
+    }
+    40%{
+        background-image: url(../img/quran1.jpg);
+        background-size: cover;
+    }
+    50%{
+         background-image: url(../img/quran2.jpg);
+        background-size: cover;
+    }
+    70%{
+        background-image: url(../img/makkah.jpg);
+        background-size: cover;
+    }
+    80%{
+         background-image: url(../img/hose.jpg);
+        background-size: cover;
+    }
+    90%{
+         background-image: url(../img/nature1.jpg);
+        background-size: cover;
+    }
+    100%{
+         background-image: url(../img/nature2.jpg);
+        background-size: cover;
+    }
+}
+div{
+    height: 500px;
+    width: 100%;
+    animation: blink 30s infinite;
+    -webkit-animation: blink 30s infinite;
+    
+}
