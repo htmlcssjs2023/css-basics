@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-positioning </title>
+    <style>
+        .container {
+            width: 700px;
+            height: 500px;
+            margin: auto;
+            border: 1px solid gray;
+            background-color: grey;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 100px;
+            grid-gap: 10px;
+            
+        }
+      .item1 {
+          background: red;
+         /* grid-row-start: 2;
+         grid-row-end: 3;
+         grid-column-start: 3;
+         grid-column-end: 4; */
+
+         /* grid-row: 2 / 3;
+         grid-column: 3 / 4;
+           */
+
+           grid-area: 2 / 3 / 3 / 4;
+           z-index: 1;
+
+            
+      }
+      .item2 {
+          background: green;
+          /* grid-row: 2 / 4; */
+          grid-row: 2 / span 3;
+      }
+      .item3{
+          background: blue;
+      }
+      .item4 {
+          background: yellow;
+          grid-column: 2 / 4;
+          grid-row: 2 / 3;
+      }
+      .item5 {
+          background: violet;
+      }
+      .item6{
+          background: hotpink;
+         /* grid-row-start: 1;
+         grid-row-end: 2;
+         grid-column-start: 1;
+         grid-column-end: 3; */
+         grid-row: 1 / 2;
+         /* grid-column: 1 / 4; */
+         /* grid-column: 1 / span 2; */
+         grid-column: 1 / span 3;
+
+      }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+</body>
+</html>

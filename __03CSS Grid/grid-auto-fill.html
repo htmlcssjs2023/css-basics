@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-item-align</title>
+    <style>
+        .container {
+            background:#ccc;
+            margin: 50px auto;
+            width: 100%px;
+          
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-rows: repeat(2, 100px);
+            grid-auto-rows: 80px;
+        }
+
+           
+
+
+        .item1 {
+            background: rebeccapurple;
+        }
+        .item2 {
+            background: red;
+        }
+        .item3 {
+            background: green;
+            
+        }
+        .item4 {
+            background: yellow;
+           
+        }
+        .item5 {
+            background: blue;
+           
+        }
+        .item6 {
+            background: hotpink;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Implicit and explicit</h1>
+    <div class="container">
+        <div class="item item1">One  </div>
+        <div class="item item2">Two</div>
+        <div class="item item3">Three</div>
+        <div class="item item4">Four. </div>
+        <div class="item item5">Five. </div>
+        <div class="item item6">Six. </div>
+       
+    </div>
+</body>
+</html>

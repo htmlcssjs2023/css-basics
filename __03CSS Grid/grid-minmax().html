@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minmax()</title>
+    <style>
+        .container {
+            margin: auto;
+            width: 80%;
+
+            display: grid;
+            grid-template-columns: minmax(150px, 1fr) 1fr 1fr 1fr;
+            grid-template-rows: repeat(2, minmax(150px, min-content));
+        }
+        .item1 {
+            background: rebeccapurple;
+        }
+        .item2 {
+            background: red;
+        }
+        .item3 {
+            background: green;
+        }
+        .item4 {
+            background: yellow;
+        }
+        .item5 {
+            background: blue;
+        }
+        .item6 {
+            background: tomato;
+        }
+        .item7 {
+            background: orange;
+        }
+        .item8 {
+            background: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <h1>minmax()</h1>
+    <div class="container">
+        <div class="item item1">One  </div>
+        <div class="item item2">Two</div>
+        <div class="item item3">Three</div>
+        <div class="item item4">Four Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque repudiandae cumque dolores, asperiores eveniet magni necessitatibus id nostrum quisquam natus nisi vitae reiciendis, animi illo rem voluptatum, quidem veritatis non. Facere sit, sequi aperiam iste nisi dignissimos sapiente natus ab error magni itaque ex quod? Aliquam ratione sapiente numquam accusantium.</div>
+        <div class="item item5">Fvie Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt esse voluptas eos blanditiis rem quibusdam odio porro praesentium nostrum sit consequatur quasi adipisci quis eius ipsum voluptates voluptatum, minima quia est impedit explicabo aperiam saepe eveniet animi. Eaque nam dolore quae doloremque impedit quasi dignissimos in provident? Ea, mollitia accusamus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, sit amet? Fugiat, aperiam? Eius aspernatur veritatis aut atque sint tempore, fugit a iusto reiciendis debitis sapiente voluptas optio, quas exercitationem, vel consequatur? Sunt omnis voluptatem exercitationem! Ratione officiis neque debitis voluptate, quisquam nulla corrupti nihil possimus, animi, veritatis amet eveniet. </div>
+        <div class="item item6">Six</div>
+        <div class="item item7"></div>
+        <div class="item item8">Eight</div>
+    </div>
+</body>
+</html>
