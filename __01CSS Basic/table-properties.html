@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabular properties</title>
+    <style>
+        table,tr, th, td {
+            border: 2px solid rebeccapurple;
+        }
+        table {
+            /* border-spacing:0px 20px; */
+            border-collapse:collapse;
+            width: 50%;
+            margin: auto;
+            table-layout: auto;
+               /* border-collapse:separate; */
+               /* border-collapse:separate; */
+               /* empty-cells:show; */
+               
+        }
+        th, td {
+            vertical-align:top;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+        }
+            
+        caption {
+            caption-side: top;
+            text-align: center;
+            font-size: 20px;
+            color:rebeccapurple;
+        }
+        tr:hover {
+            background-color: lightslategrey;
+        }
+        tr:nth-child(odd){
+            background-color: lightblue;
+        }
+            
+               
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Employee Record</caption>
+        <tr>
+          <th>Name</th>
+          <th>ID</th>
+          <th>Favorite Color</th>
+        </tr>
+        <tr>
+          <td>Jim</td>
+          <td>00001</td>
+          <td>Blue</td>
+        </tr>
+        <tr>
+          <td>Sue</td>
+          <td>00002</td>
+          <td>Red</td>
+        </tr>
+        <tr>
+          <td>Barb</td>
+          <td>00003</td>
+          <td>Green</td>
+        </tr>
+        <tr>
+            <td>Barb</td>
+            <td>00003</td>
+            <td>Green</td>
+          </tr>
+          <tr>
+            <td>Barb</td>
+            <td>00003</td>
+            <td>Green</td>
+          </tr>
+          <tr>
+            <td>Barb</td>
+            <td>00003</td>
+            <td>Green</td>
+          </tr>
+
+          <tr>
+            <td>Barb</td>
+            <td>00003</td>
+            <td>Green</td>
+          </tr>
+          <tr>
+            <td>Barb</td>
+            <td>00003</td>
+            <td>Green</td>
+          </tr>
+          <tr>
+            <td>Barb</td>
+            <td>00003</td>
+            <td>Green</td>
+          </tr>
+          <tr>
+            <td>Barb</td>
+            <td>00003</td>
+            <td>Green</td>
+          </tr>
+      </table>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        .box1 {
+            height: 100px;
+            width: 100px;
+            background-color: chocolate;
+            position: absolute;
+        }
+        .box2 {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            z-index: -1;
+           
+            
+           
+        }
+        .box3 {
+            height: 100px;
+            width: 100px;
+            background-color: gold;
+            position:absolute;
+            left: 100px;
+            top: 100px;
+
+            
+        }
+        .box4 {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            position:absolute;
+            left: 150px;
+            top: 150px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">A</div>
+    <div class="box2">B</div>
+    <div class="box3">C</div>
+    <div class="box4">C</div>
+</body>
+</html>
