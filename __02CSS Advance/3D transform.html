@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 3D transform </title>
+    <style>
+        .base {
+            width: 350px;
+            height: 250px;
+            background: green;
+            font-size: 18px;
+            text-align: center;
+            margin: 100px 0 0 100px;
+        }
+        #box{
+            width: 350px;
+            height: 250px;
+            background: tomato;
+
+            /* transform:perspective(1000px) rotateX(0); */
+            /* transform:perspective(1000px) rotateY(0); */
+            /* transform:perspective(1000px) rotateZ(0); */
+           
+            /* transform-origin: top center; */
+            /* transform-origin: top left; */
+            /* transform: perspective(1000px) rotateY(60deg) translateZ(100px); */
+            /* transform: perspective(1000px) rotateY(60deg) translate3d(100px, 50px, 40px); */
+            /* transform: perspective(1000px) rotateX(60deg) scaleZ(1); */
+            /* transform: perspective(1000px) scaleZ(5) rotateX(60deg); */
+            transform: perspective(1000px) scale3d(1, 2, 3) rotateX(60deg);
+            /* transform-origin: bottom center; */
+
+            
+            /*transition: all 2s; */
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         /* #box:hover { */
+            /* transform:perspective(100px) rotateX(180deg); */
+            /* transform:perspective(1000px) rotateY(120deg); */
+            /* transform:perspective(1000px) rotateZ(20deg);
+            background: red;
+            clip-path: circle(40% at 50% 50%); */
+        /* }  */
+           
+          
+            
+
+           
+            
+            
+           
+           
+
+    </style>
+</head>
+<body>
+    <div class="base">
+        <div id="box"><h1>ABDUL HALIM</h1></div>
+    </div>
+</body>
+</html>

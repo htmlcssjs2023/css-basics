@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance selector</title>
+    <style>
+        a {
+            color:red;
+        }
+        .lic {
+            font-size: 20px;    
+        }
+        #list {
+            background-color: blueviolet;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        /* descendant selector  */
+        .box1 a {
+            color: white;
+        }
+        .box1 {
+            background: darkblue;
+        }
+        /* direct child  */
+        .box1 > ul> li> li {
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+     <h1>simple selectors </h1>
+    <ul id = "list">
+        <li class = "lic"><a href="#">type selector</a></li>
+        <li><a href="#">class selector</a></li>
+        <li><a href="#">Id selector</a></li>
+        <li><a href="#">universal selector</a></li>
+    </ul>
+    <h2>Combinator selector </h2>
+
+   <div class="box1">
+    <ul>
+        <li><a href="#">Descendant selector</a></li>
+        <li><a href="#">direct child selector</a>
+           <ul>
+            <li><a href="Home"></a></li>
+            <li><a href="Home"></a></li>
+            <li><a href="Home"></a></li>
+            <li><a href="Home"></a></li>
+           </ul>
+        </li>
+        <li><a href="#">Adjacent sibling selector</a></li>
+        <li><a href="#">General sibling selector</a></li>
+    </ul>
+   </div>
+</body>
+</html>

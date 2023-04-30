@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>after and before</title>
+    <style>
+        p:before {
+            content: "Hello" " ";
+            color: red;
+            font-size: 50px;
+            background: gray;
+            display: block;
+        }
+        /* p:after {
+            content: "word";
+            color: green;
+            font-size: 100px;
+        } */
+
+        p:hover:after {
+            content: "word";
+            color: green;
+            font-size: 100px;
+            background: hotpink;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> after and before </h1> 
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+</body>
+</html>

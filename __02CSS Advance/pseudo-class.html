@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-class</title>
+    <style>
+        /* li:first-child {
+            color:red;
+        }
+        p:first-child {
+            color: green;
+        }
+        li:last-child {
+            color: blue;
+        }
+        p:last-child {
+            color:blue;
+        } */
+        /* li:nth-child(2){
+            color:red;
+        } */
+
+         /* li:nth-child(2n){
+            color:red;
+        } */
+
+         /* li:nth-child(3n){
+            color:red;
+        } */
+        /* li:nth-child(3n-1){
+            color:red;
+        } */
+
+        /* li:nth-last-child(1){
+            color:red;
+        } */
+
+        li:nth-of-type(2){
+            color:red;
+        }
+        p:target {
+            background: blueviolet;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <li><a href="#id">What ?</a></li>
+    <ul id ="list1">
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+    </ul>
+    <p id = "id">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <ul id = "list2">
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+</body>
+</html>

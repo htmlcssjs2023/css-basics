@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> transform style </title>
+    <style>
+        .parent {
+            width: 400px;
+            height: 250px;
+            background: gray;
+            margin: auto;
+            margin-top: 100px;
+            perspective: 800px; 
+            transform: rotateY(50deg);
+            transform-style: preserve-3d;
+            
+        }
+        .box {
+            width: 400px;
+            height: 250px;
+            background: hotpink;
+            transform: rotateX(60deg);
+            transform-origin: bottom;
+            border: 3px dashed green;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box">ABCD</div>
+    </div>
+</body>
+</html>
