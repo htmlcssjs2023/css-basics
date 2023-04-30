@@ -1,0 +1,43 @@
+.container {
+   border: 2px solid rebeccapurple;
+   padding: 10px;
+   width: 70%;
+   height: 300px;
+   display: flex;
+   flex-flow: wrap;
+   
+}
+.common {
+    padding: 30px;
+    margin: 2px;
+    font-size: large;
+    font-weight: bold;
+    color: #fff;
+    flex-grow: 1;
+}       
+.item1 {background: red;
+    flex-basis: 150px;
+}
+.item2 {background: green;}
+.item3 {background: blue;}
+.item4 {background: darkolivegreen;flex-basis: 150px;}
+.item5 {background: darkslategray;}
+.item6 {background: orangered;
+flex-basis: 150px;}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex form</title>
+    <style>
+        #wrapper {
+            background: #ccc;
+            list-style: none;
+            margin:  15px;
+            padding: 20px;
+        }
+        #wrapper li{
+            display: flex;
+            justify-content: flex-end;
+            padding: 5px 0;
+        }
+        #wrapper li label {
+            flex: .8;
+        }
+        @media screen and (min-width : 300px) and (max-width: 499px) {
+            #wrapper li{
+                flex-direction: column;
+            }
+            #wrapper li input {
+            flex: 3;
+            }
+        }
+
+        @media screen and (min-width : 500px) {
+            #wrapper li input {
+            flex: 5;
+        }
+        }
+        
+        @media screen and (min-width : 768px) {
+            #wrapper li input {
+            flex: 6;
+        }
+        }
+        @media screen and (min-width : 992) {
+            #wrapper li input {
+            flex: 7;
+        }
+        }
+        @media screen and (min-width : 1200px) {
+            #wrapper li input {
+            flex: 8;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Align form with flex box </h1>
+    <form action="">
+        <ul id = "wrapper">
+            <li>
+                <label for="">Name </label>
+                <input type="text">
+            </li>
+            <li>
+                <label for="">Class Name </label>
+                <input type="text">
+            </li>
+            <li>
+                <label for="">Email Address </label>
+                <input type="email"> 
+            </li>
+            <li>
+                <button type ="submit">Save</button>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>

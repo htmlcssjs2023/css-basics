@@ -1,0 +1,32 @@
+.container {
+   border: 2px solid green;
+   font-size: 1em;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 10px;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.common {
+}       
+.item1 {background: red;}
+.item2 {background: green;}
+.item3 {background: blue;}
+.item4 {background: yellow;}
+.item5 {background: darkslategray;}
+.item6 {background: orangered;}
